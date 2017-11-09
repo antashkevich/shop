@@ -5,17 +5,13 @@ $(document).ready(function(){
 		autoplaySpeed: 2000,*/
 	});
 
-	(function(s) {
-	    var n;
-	    s(".tabs").on("click", "li:not(.active)", function() {
-	        n = s(this).parents(".tabs_block"), s(this).dmtabs(n)
-	    }), s.fn.dmtabs = function(n) {
-	        s(this).addClass("active").siblings().removeClass("active"), n.find(".box").eq(s(this).index()).show(1, function() {
-	            s(this).addClass("open_tab")
-	        }).siblings(".box").hide(1, function() {
-	            s(this).removeClass("open_tab")
-	        })
-	    }
-	});
-
+    $(".tabs-menu a").click(function(event) {
+        event.preventDefault();
+        $(this).parent().addClass("current");
+        $(this).parent().siblings().removeClass("current");
+        var tab = $(this).attr("href");
+        $(".tab-content").not(tab).css("display", "none");
+        $(tab).fadeIn();
+    });
+    
 });
