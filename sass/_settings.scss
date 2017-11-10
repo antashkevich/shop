@@ -36,32 +36,40 @@
     font-family: "Bello";
     src: url("../fonts/Bello-Script_6557.ttf") format("truetype");
 }
+/*Helvetica*/
+@font-face {
+    font-family: "Helvetica";
+    src: url("../fonts/9202.otf") format("opentype");
+}
+/*AEmpirial*/
+@font-face {
+    font-family: "AEmp";
+    src: url("../fonts/1987.ttf") format("truetype");
+}
 /*sprite*/
-$mysprite-layout:smart;
+ $mysprite-layout:smart;
 @import "icons/*.png";
 @include all-icons-sprites;
 
-$icons: ('arrow-left1','arrow-left2','arrow-right1','arrow-right2','icon-account','icon-bag',
-    'icon-bagBig','icon-brand1','icon-brand2','icon-brand3','icon-brand4','icon-brand5',
-    'icon-brand6','icon-brand7','icon-brand8','icon-copyright','icon-payCard1',
-    'icon-payCard2','icon-payCard3','icon-payCard4','icon-payCard5','icon-payCard6',
-    'icon-payCard7','icon-payCard8','icon-payCard9','icon-payCard10','icon-payCard11',
-    'icon-plus','icon-searchHeader','icon-socFooter1','icon-socFooter2','icon-socFooter3',
-    'icon-socFooter4','icon-socFooter5','icon-socFooter6','icon-socFb','icon-socPic','icon-socTwit');
+$icons: ('icon-payCard1','icon-payCard2','icon-payCard3','icon-payCard4',
+    'icon-payCard5','icon-payCard6','icon-payCard7','icon-payCard8','icon-payCard9',
+    'icon-payCard10','icon-payCard11','icon-socFooter1','icon-socFooter2',
+    'icon-socFooter3','icon-socFooter4','icon-socFooter5','icon-socFooter6','icon-account',
+    'icon-searchHeader','icon-bag','icon-socFb','icon-socTwit','icon-socPic');
 
 @each $icons in $icons {
     .icons-#{$icons} {
-    display: inline-block;
-    position: relative;
-    width: icons-sprite-width(#{$icons});
-    height: icons-sprite-height(#{$icons});
-      
-    vertical-align: top;
-    display: -moz-inline-stack;
-    zoom: 1;
-    *display: inline;
- }
-}
+        display: inline-block;
+        position: relative;
+        width: icons-sprite-width(#{$icons});
+        height: icons-sprite-height(#{$icons});
+          
+        vertical-align: top;
+        display: -moz-inline-stack;
+        zoom: 1;
+        *display: inline;
+    }
+} 
 
 body {
     font-family: Arial, sans-aerif;
