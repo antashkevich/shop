@@ -1,0 +1,213 @@
+/*responsive*/
+@media screen  and (max-width: 1000px){
+	header {
+		.top {
+			p {
+				span {padding-left: 3px;}
+			}
+		}
+		.bottom {
+		    padding: 21px 0 21px 0;
+		    .logo {padding: 7px 0 0 14px;}
+			.navigation {
+				nav {display: none;}
+			}
+		}
+		.mob-menu {
+			display: -webkit-box;
+		    display: -ms-flexbox;
+		    display: flex;
+		}
+	}
+	.wr-slider-top.slick-dotted.slick-slider {margin-bottom: 55px;}
+	.wr-slider-top {
+		.slide {
+		    padding: 62px 0 54px 0;
+		    .slide-content img {
+			    margin-bottom: 5px;
+			    width: 252px;
+			}
+			.slide-content {
+				padding-left: 78px;
+				a {
+				    font-size: 12px;
+				    height: 43px;
+				    width: 116px;
+				    padding: 15px 0 0 17px;
+				    &:after {
+					    right: 20px;
+					    top: 18px;
+					    border-top: 3px solid transparent;
+					    border-bottom: 3px solid transparent;
+					    border-left: 3px solid #fff;
+					}
+				}
+				p {
+				    font-size: 27px;
+				    padding-left: 10px;
+				    margin-bottom: 9px;
+				    letter-spacing: -0.2px;
+				}
+			}
+		}
+	}
+	.wr-slider-top .slick-prev, .wr-slider-top .slick-next {top: 52%;}	
+	.wr-slider-top .slick-dots {bottom: -38px;}
+	.wr-contacts {margin-bottom: 33px;}
+	.wr-banner {
+	    margin-bottom: 82px;
+	    .container {
+		    width: 100%;
+		    padding: 0 15px;
+		    -webkit-box-sizing: border-box;
+		    box-sizing: border-box;
+		}
+		.block1 {		   
+		    background-size: cover;
+		    padding: 48px 7px 55px 0;
+		    .p1-1 {
+			    font-size: 26px;
+			    line-height: 28px;
+			}
+			.p1-2 {
+			    font-size: 53px;
+			    line-height: 49px;
+			}
+			.p1-3 {
+			    font-size: 60px;
+			    line-height: 49px;
+			}
+			 img {width: 75%;}
+		}
+		.block3 {
+		    padding: 13px 0 11px 21px;
+		    div {
+			    width: 100px;
+			    height: 103px;
+			    background-size: cover;
+			    padding: 18px 0 0 0;
+			}
+			.p3-1 {
+			    font-size: 17px;
+			    line-height: 20px;
+			}
+			.p3-2 {
+			    font-size: 32px;
+			    line-height: 28px;
+			}
+			.p3-3 {
+			    font-size: 11px;
+			    line-height: 14px;
+			}
+		}
+		.block5 {
+		    padding: 0 0 11px 19px;
+		    a {font-size: 25px;}
+		}
+		.block6 {
+		    padding: 33px 0 0 14px;
+		    p {
+			    font-size: 26px;
+			    line-height: 24px;
+			    padding-right: 79px;
+			    margin-bottom: 11px;
+			}
+			a {
+			    font-size: 9px;
+			    width: 73px;
+			    height: 21px;
+			    padding: 6px 0 0px 6px;
+			    margin-left: 9px;
+			    &:after {	    
+				    right: 9px;
+				    top: 8px;	    
+				    border-top: 3px solid transparent;
+				    border-bottom: 3px solid transparent;
+				    border-left: 3px solid #fff;
+				}
+			}
+		}
+	}
+	.wr-stock {
+	    margin-bottom: 35px;
+		.slides .box-block{
+		    margin: 0 18px;
+		    &:last-child {display: none;}
+		}
+	}
+	.wr-brands {
+	    margin-bottom: 26px;
+		.caption {margin-bottom: 16px;}
+		ul {
+			margin: 0 43px;
+			li {
+				&:last-child, &:nth-last-child(2) {display: none;}
+			}
+		}
+	}
+	.wr-shop-info .container {
+	    padding: 0 9px;
+	    p {letter-spacing: 0px;}
+	}
+	footer .footer-top {
+	    padding: 32px 0 26px 0;
+	}
+	.footer-top-nav {
+	    width: 53%;
+	    padding-left: 14px;
+	    .block {
+	    	width: 50%;
+		    margin-bottom: 36px;
+		    &:last-child, &:nth-last-child(2) {margin-bottom: 0;}
+	    }
+	}
+	.footer-top-soc {
+	    padding: 0 0 0 2px;
+	}
+}
+@media screen  and (max-width: 759px){
+	header .top {
+		.container {
+		    height: auto;
+		    -webkit-box-orient: vertical;    
+		    -webkit-box-direction: normal;    
+		    -ms-flex-direction: column;    
+		    flex-direction: column;
+		}
+		p {
+		    font-size: 31px;
+		}
+		.phone-numder {
+		    width: 100%;
+		    background: #fafafa;
+		    padding: 33px 0px;
+		    p {
+			    padding: 0 15px;
+			    font-size: 30px;
+			    color: #838383;
+			    display: -webkit-box;
+			    display: -ms-flexbox;
+			    display: flex;
+			    -webkit-box-pack: center;
+			    -ms-flex-pack: center;
+		        justify-content: center;
+		        span {
+				    padding-left: 8px;
+				    font-size: 30px;
+				}
+			}
+		}
+		.option-current {
+		    border-left: 3px solid #444;
+		    padding: 0px 56px 0 25px;
+		    &:after {
+			    right: 26px;
+			    top: 13px;
+			    border-left: 10px solid transparent;
+			    border-right: 10px solid transparent;
+			    border-top: 10px solid #c1c1c1;
+			}
+		}
+	}
+
+}

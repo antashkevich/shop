@@ -46,6 +46,11 @@
     font-family: "AEmp";
     src: url("../fonts/1987.ttf") format("truetype");
 }
+/*Impact*/
+@font-face {
+    font-family: "Impact";
+    src: url("../fonts/impact.ttf") format("truetype");
+}
 /*sprite*/
  $mysprite-layout:smart;
 @import "icons/*.png";
@@ -55,7 +60,7 @@ $icons: ('icon-payCard1','icon-payCard2','icon-payCard3','icon-payCard4',
     'icon-payCard5','icon-payCard6','icon-payCard7','icon-payCard8','icon-payCard9',
     'icon-payCard10','icon-payCard11','icon-socFooter1','icon-socFooter2',
     'icon-socFooter3','icon-socFooter4','icon-socFooter5','icon-socFooter6','icon-account',
-    'icon-searchHeader','icon-bag','icon-socFb','icon-socTwit','icon-socPic');
+    'icon-searchHeader','icon-bag','icon-socFb','icon-socTwit','icon-socPic','icon-menu');
 
 @each $icons in $icons {
     .icons-#{$icons} {
@@ -70,13 +75,12 @@ $icons: ('icon-payCard1','icon-payCard2','icon-payCard3','icon-payCard4',
         *display: inline;
     }
 } 
-
+html {overflow-x: hidden;}
 body {
     font-family: Arial, sans-aerif;
     background: #ffffff;
     overflow-x: hidden;
 }
-
 .container {
 	max-width: 1000px;
 	width: 100%;

@@ -2,8 +2,7 @@
 @import 'compass/reset';
 @import 'settings';
 @import 'header'; 
-@import 'footer';  
-  
+
 /*Slider-top*/
 .wr-slider-top {
 	.container {
@@ -70,6 +69,7 @@
 				    border-top: 4px solid transparent;
 				    border-bottom: 4px solid transparent;
 				    border-left: 4px solid #fff;
+				    -webkit-box-sizing: border-box;
 				    box-sizing: border-box;
 				}
 				&:hover {background: #dd6b44;}
@@ -847,7 +847,11 @@
 .wr-shop-info {
     text-align: center;
     margin-bottom: 27px;
-    .container {padding: 0 15px;}
+    .container {
+    	-webkit-box-sizing: border-box;
+    	box-sizing: border-box;
+    	padding: 0 15px;
+    }
 	h3 {
 		font-size: 24px;
 		color: #414141;
@@ -891,3 +895,6 @@
 	}
 
 }
+
+@import 'footer'; 
+@import 'responsive'; 
